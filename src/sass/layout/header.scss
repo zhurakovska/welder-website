@@ -1,0 +1,15 @@
+.header {
+    position: absolute;
+    width: 100%;
+&-link {
+    font-weight: 700;
+    font-size: 16px;
+    color: $black-color;
+    text-transform: uppercase;
+    line-height: 1.25;
+}
+}
+
+.header-link + .header-link {
+    margin-left: 42px;
+}

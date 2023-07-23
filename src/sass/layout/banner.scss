@@ -1,0 +1,27 @@
+.banner {
+    background-image: $bgr-color;
+    padding-top: 42px;
+
+    &-title {
+        font-weight: 700;
+        font-size: 76px;
+        line-height: 1.28;
+        text-transform: uppercase;
+    }
+
+    &-text {
+        max-width: 455px;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 1.27;
+        text-transform: uppercase;
+
+    }
+    &-text-bold {
+        font-weight: 700;
+    }
+
+    &__order-btn {
+        padding: 20px 25px;
+    }
+}
