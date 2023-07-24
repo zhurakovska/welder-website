@@ -1,0 +1,44 @@
+.settings {
+    background-image: $bgr-color;
+
+    &-wrapper {
+        display: flex;
+    }
+
+    &-wrapper-left {
+        padding: 110px 0 84px;
+        margin-right: 89px;
+    }
+
+    &-subtitle {
+        max-width: 546px;
+
+        &_hot {
+            color: $hot-color;
+        }
+
+        &_cold {
+            color: $cold-color;
+        }
+    }
+
+    &-text {
+        max-width: 540px;
+        margin-top: 32px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.3;
+        text-transform: uppercase;
+    }
+
+    // &-wrapper-right {
+    //     width: 100%;
+    // }
+
+    &-img {
+        height: 100%;
+        width: 100%;
+    }
+
+
+}

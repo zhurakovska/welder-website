@@ -1,13 +1,25 @@
 .header {
     position: absolute;
     width: 100%;
-&-link {
-    font-weight: 700;
-    font-size: 16px;
-    color: $black-color;
-    text-transform: uppercase;
-    line-height: 1.25;
-}
+    padding-top: 12px;
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &-logo-link {
+        margin-right: 69px;
+    }
+
+    &-link {
+        font-weight: 700;
+        font-size: 16px;
+        color: $black-color;
+        text-transform: uppercase;
+        line-height: 1.25;
+    }
 }
 
 .header-link + .header-link {

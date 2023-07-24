@@ -1,12 +1,16 @@
 .banner {
     background-image: $bgr-color;
-    padding-top: 42px;
+    padding-top: 137px;
+    padding-bottom: 75px;
+
+    &-wrapper {
+        display: flex;
+        // margin-top: 42px;
+    }
 
     &-title {
-        font-weight: 700;
         font-size: 76px;
         line-height: 1.28;
-        text-transform: uppercase;
     }
 
     &-text {
@@ -14,7 +18,7 @@
         font-weight: 500;
         font-size: 36px;
         line-height: 1.27;
-        text-transform: uppercase;
+        margin-top: 15px;
 
     }
     &-text-bold {
@@ -23,5 +27,6 @@
 
     &__order-btn {
         padding: 20px 25px;
+        margin-top: 58px;
     }
 }
