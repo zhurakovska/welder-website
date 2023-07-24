@@ -1,0 +1,46 @@
+.size {
+    background-image: $bgr-color;
+    position: relative; 
+
+    &-wrapper {
+        display: flex;
+    }
+
+    &-text-inner {
+        padding: 110px 0 78px;
+    }
+
+    &-text {
+        max-width: 350px;
+        margin-top: 29px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.3;
+        text-transform: uppercase;
+    }
+
+    &-img-worker {
+        height: 100%;
+    }
+}
+
+.red-diamond {
+    width: 66px;
+    height: 66px;
+    background-image: $red-color;
+    position: absolute;
+  }
+  
+  .top {
+    top: 0;
+    left: 14%;
+    transform: translateX(-50%) rotate(45deg);
+    margin-top: -33px;
+  }
+  
+  .bottom {
+    bottom: 0;
+    right: 11%;
+    transform: translateX(-50%) rotate(45deg);
+    margin-bottom: -33px;
+  }
