@@ -12,10 +12,15 @@
     &-list {
         display: flex;
         gap: 111px;
+       
     }
 
     &-card {
         width: calc((100% - 222px) /3);
+    }
+
+    &-card-icon {
+        margin: 0 auto;
     }
 
     &-card-text {

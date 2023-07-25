@@ -5,7 +5,14 @@
 
     &-wrapper {
         display: flex;
+        justify-content: center;
+        align-items: center;
         // margin-top: 42px;
+    }
+
+    &-wrapper-left {
+        margin-right: 19px;
+        max-width: 445px;
     }
 
     &-title {
@@ -14,9 +21,8 @@
     }
 
     &-text {
-        max-width: 455px;
         font-weight: 500;
-        font-size: 36px;
+        font-size: 35px;
         line-height: 1.27;
         margin-top: 15px;
 
