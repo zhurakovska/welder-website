@@ -13,15 +13,14 @@
         margin-right: 69px;
     }
 
-    &-link {
+    &-menu {
+        display: flex;
+        gap: 42px;
         font-weight: 700;
         font-size: 16px;
-        color: $black-color;
         text-transform: uppercase;
         line-height: 1.25;
+        color: $black-color;
     }
 }
 
-.header-link + .header-link {
-    margin-left: 42px;
-}

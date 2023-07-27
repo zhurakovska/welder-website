@@ -1,13 +1,20 @@
-.settings {
+.description {
     background-image: $bgr-color;
 
     &-wrapper {
         display: flex;
+        position: relative;
     }
 
-    &-wrapper-left {
-        padding: 110px 0 84px;
-        margin-right: 89px;
+    &-wrapper-info {
+        width: 55%;
+    }
+
+    &-wrapper-text {
+        max-width: 546px;
+        position: absolute;
+        top: 115px;
+        left: 250px;
     }
 
     &-subtitle {
@@ -23,7 +30,6 @@
     }
 
     &-text {
-        max-width: 540px;
         margin-top: 32px;
         font-weight: 500;
         font-size: 18px;
@@ -31,14 +37,13 @@
         text-transform: uppercase;
     }
 
-    // &-wrapper-right {
-    //     width: 100%;
-    // }
-
-    &-img {
-        height: 100%;
-        width: 100%;
+    &-wrapper-logo {
+        margin-left: auto;
+        width: 45%;
     }
 
+    &-img {
+        width: 100%;
+    }
 
 }

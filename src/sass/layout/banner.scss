@@ -1,17 +1,17 @@
 .banner {
     background-image: $bgr-color;
-    padding-top: 137px;
-    padding-bottom: 75px;
+    padding-top: 138px;
+    padding-bottom: 76px;
 
     &-wrapper {
         display: flex;
+        gap: 20px;
         justify-content: center;
         align-items: center;
-        // margin-top: 42px;
     }
 
-    &-wrapper-left {
-        margin-right: 19px;
+    &-wrapper-info {
+        margin-right: 20px;
         max-width: 445px;
     }
 
@@ -25,14 +25,13 @@
         font-size: 35px;
         line-height: 1.27;
         margin-top: 15px;
-
     }
+    &-phone-link {
+        margin-top: 30px;
+    }
+
     &-text-bold {
         font-weight: 700;
     }
-
-    &__order-btn {
-        padding: 20px 25px;
-        margin-top: 58px;
-    }
 }
+
