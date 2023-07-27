@@ -3,23 +3,25 @@
 
     &-wrapper {
         display: flex;
-        position: relative;
+        height: 512px;
     }
 
     &-wrapper-info {
         width: 55%;
     }
 
-    &-wrapper-text {
-        max-width: 546px;
+    .description__position {
         position: absolute;
-        top: 115px;
-        left: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &-wrapper-text {
+        padding: 97px 90px 97px 0;
+        max-width: 546px;
     }
 
     &-subtitle {
-        max-width: 546px;
-
         &_hot {
             color: $hot-color;
         }
@@ -40,9 +42,13 @@
     &-wrapper-logo {
         margin-left: auto;
         width: 45%;
+        height: 100%;
+        background-image: url('../images/size-img.jpg');
+        background-size: cover;
     }
 
     &-img {
+        height: 100%;
         width: 100%;
     }
 
