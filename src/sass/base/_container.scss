@@ -35,6 +35,12 @@
   padding: 20px 25px;
 }
 
+.phone-link:hover,
+.phone-link:focus {
+  background-image: linear-gradient(180deg,  #C41E20 100%, #EA5C68 0%,);;
+ 
+}
+
 .text {
   font-weight: 700;
   text-transform: uppercase;
