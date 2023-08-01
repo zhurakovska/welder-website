@@ -1,18 +1,8 @@
 .container {
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1172px;
-    padding: 0 15px;
-
-    // @media (max-width: 991px) {
-    //   max-width: 991px;
-    //   padding: 0 40px;
-    // }
-    // @media (min-width: 480px) {
-    //   max-width: 480px;
-    //   padding: 0 40px;
-    
-    // }
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1172px;
+  padding: 0 15px;
 }
 
 @media (max-width: 1024px) {
@@ -26,7 +16,6 @@
     max-width: 200px;
   }
 }
-
 
 .page {
   font-family: 'Montserrat', sans-serif;
@@ -47,7 +36,7 @@
 
 .phone-link:hover,
 .phone-link:focus {
-  background-image: linear-gradient(180deg,  #C41E20 100%, #EA5C68 0%,);;
+  background-image: linear-gradient(180deg, #c41e20 100%, #ea5c68 0%);
 }
 
 .text {
@@ -55,4 +44,3 @@
   text-transform: uppercase;
   color: $black-color;
 }
-

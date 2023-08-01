@@ -1,42 +1,80 @@
 .banner {
-    background-image: $bgr-color;
-    padding-top: 138px;
-    padding-bottom: 76px;
+  background-image: $bgr-color;
+  padding-top: 117px;
+  padding-bottom: 76px;
 
-    &-wrapper {
-        display: flex;
-        gap: 20px;
-        justify-content: center;
-        align-items: center;
+  &-wrapper {
+    min-height: 708px;
+    background-image: url(../images/welder-banner.png);
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+
+  &-wrapper-info {
+    padding: 160px 0;
+    margin-right: 20px;
+    max-width: 445px;
+  }
+
+  &-title {
+    font-size: 76px;
+    line-height: 80px;
+  }
+
+  &-text {
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 1.27;
+    margin-top: 15px;
+  }
+  &-phone-link {
+    margin-top: 30px;
+    display: inline-block;
+    background-image: $red-color;
+    color: $white-color;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    padding: 20px 25px;
+    transition: background-image 6000ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &-icon {
+      fill: white;
+      margin-right: 8px;
     }
+  }
 
+  &-text-bold {
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    max-width: 100%;
+    padding: 0 40px;
+  }
+
+  .banner {
+    min-height: 770px;
     &-wrapper-info {
-        margin-right: 20px;
-        max-width: 445px;
+      max-width: 296px;
     }
 
     &-title {
-        font-size: 76px;
-        line-height: 1.28;
+      font-size: 49px;
+      line-height: 1.3;
     }
 
     &-text {
-        font-weight: 500;
-        font-size: 35px;
-        line-height: 1.27;
-        margin-top: 15px;
+      font-size: 23px;
     }
+
     &-phone-link {
-        margin-top: 30px;
-
-        &-icon {
-            fill:white;
-            margin-right: 8px;
-        }
+      padding: 13px 16px;
+      font-size: 16px;
+      margin-top: 26px;
     }
-
-    &-text-bold {
-        font-weight: 700;
-    }
+  }
 }
-
