@@ -25,6 +25,14 @@
   }
 }
 
+.mobile-menu {
+  display: none;
+}
+
+.menu-open-button {
+  display: none;
+}
+
 @media (max-width: 1024px) {
   .container {
     max-width: 100%;
@@ -38,49 +46,23 @@
     margin-top: 12px;
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     position: relative;
     top: 0;
     right: 0;
   }
-
   .header-logo-link {
     margin-left: 30px;
+    width: 95px;
+    height: 62px;
   }
 
   .header-menu {
     display: none;
   }
 
-  .menu-open-buttton {
-    // display: block;
-    margin-right: 26px;
-    width: 43px;
-    height: 43px;
-  }
-
-  .mobile-menu.is-open {
-    display: block;
-  }
-
-  .menu-open-icon {
-    fill: $red-secondary-color;
-    padding: 0;
-  }
-
-  .menu-close-icon {
-    fill: $red-secondary-color;
-    width: 24px;
-    height: 24px;
-    margin-right: auto;
-  }
-
-  .menu-close-button {
-    display: block;
-    margin-left: auto;
-  }
-
   .mobile-menu {
+    display: none;
     width: 300px;
     background-color: $white-color;
     position: fixed;
@@ -90,7 +72,7 @@
     z-index: 10;
     padding: 26px;
 
-    .mobile-menu.is-open {
+    &.is-open {
       display: block;
     }
 
@@ -115,7 +97,27 @@
     }
   }
 
-  .header .container {
+  .menu-open-icon {
+    fill: $red-secondary-color;
     padding: 0;
+  }
+
+  .menu-close-icon {
+    fill: $red-secondary-color;
+    width: 24px;
+    height: 24px;
+  }
+
+  .menu-close-button {
+    display: block;
+    margin-left: auto;
+  }
+
+  .menu-open-button {
+    display: block;
+    margin-right: 26px;
+    width: 43px;
+    height: 43px;
+    cursor: pointer;
   }
 }
