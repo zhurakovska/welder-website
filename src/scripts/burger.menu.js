@@ -9,6 +9,6 @@
   refs.closeMenuBtn.addEventListener('click', toggleMenu);
 
   function toggleMenu() {
-    refs.menu.classList.toggle('is-open');
+    refs.menu.classList.toggle('is-hidden');
   }
 })();

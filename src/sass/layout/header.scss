@@ -25,11 +25,11 @@
   }
 }
 
-.mobile-menu {
+.menu-open-button {
   display: none;
 }
 
-.menu-open-button {
+.mobile-menu {
   display: none;
 }
 
@@ -38,7 +38,7 @@
     max-width: 100%;
   }
 
-  .header {
+  .header .container {
     padding: 0;
   }
 
@@ -62,7 +62,7 @@
   }
 
   .mobile-menu {
-    display: none;
+    display: block;
     width: 300px;
     background-color: $white-color;
     position: fixed;
@@ -70,10 +70,11 @@
     top: 0;
     right: 0;
     z-index: 10;
-    padding: 26px;
+    padding: 34px 26px;
+    transition: right 0.3s ease;
 
-    &.is-open {
-      display: block;
+    &.is-hidden {
+      right: -300px;
     }
 
     &-list {
@@ -109,12 +110,18 @@
   }
 
   .menu-close-button {
-    display: block;
+    width: 43px;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-left: auto;
   }
 
   .menu-open-button {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-right: 26px;
     width: 43px;
     height: 43px;
