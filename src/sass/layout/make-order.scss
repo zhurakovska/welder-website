@@ -135,6 +135,60 @@
   }
 }
 
-// @media (max-width: 768px) {
+@media (max-width: 768px) {
+  .order {
+    &-banner {
+      display: none;
+    }
+    &-wrapper {
+      padding: 0;
+      flex-direction: column;
+      padding: 32px;
+    }
+    &-wrapper-left:before {
+      content: '';
+      display: none;
+    }
 
-//  }
+    &-wrapper-right {
+      order: 1;
+      margin-left: 0;
+    }
+
+    &-wrapper-left {
+      order: 2;
+      margin-top: 66px;
+      padding-bottom: 16px;
+    }
+
+    &-title {
+      text-align: left;
+      font-size: 23px;
+      line-height: 30px;
+    }
+    &-phone-link {
+      padding: 13px 16px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    &-red-diamond {
+      width: 25px;
+      height: 25px;
+      background-image: $red-color;
+      position: absolute;
+    }
+
+    &-top {
+      top: -12px;
+      left: 10%;
+      transform: translateX(-50%) rotate(45deg);
+    }
+
+    &-bottom {
+      top: 179px;
+      right: 5%;
+      transform: translateX(-50%) rotate(45deg);
+    }
+  }
+}
