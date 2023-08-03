@@ -51,12 +51,22 @@
     }
   }
 
+  &-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 18px;
+  }
+
   &-socials {
-    margin-top: 30px;
     justify-content: end;
     display: flex;
     gap: 12px;
   }
+}
+
+.menu-link-footer {
+  font-size: 15px;
 }
 
 @media (max-width: 1024px) {
@@ -94,6 +104,11 @@
 
     &-menu-column {
       gap: 20px;
+    }
+
+    &-description {
+      bottom: 35px;
+      right: 176px;
     }
   }
 }
