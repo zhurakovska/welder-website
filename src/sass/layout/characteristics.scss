@@ -70,3 +70,37 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .characteristics {
+    padding-top: 80px;
+    padding-bottom: 80px;
+
+    &-subtitle {
+      line-height: 30px;
+    }
+
+    &-list {
+      flex-direction: column;
+      margin-top: 46px;
+      justify-content: center;
+      align-items: center;
+      gap: 24px;
+      padding: 0;
+    }
+    &-card-icon {
+      height: 115px;
+    }
+
+    &-card {
+      width: 300px;
+    }
+
+    &-card-text {
+      margin-top: 25px;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+    }
+  }
+}
