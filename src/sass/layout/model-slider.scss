@@ -1,9 +1,17 @@
 .model {
   padding-top: 106px;
   padding-bottom: 142px;
+
+  &-title {
+    line-height: 38px;
+
+    &-accent {
+      color: $grey-color;
+    }
+  }
 }
 
-.slider {
+.m .slider {
   display: flex;
   align-items: center;
 }
@@ -74,5 +82,37 @@
 
   .swiper-list {
     margin-top: 6px;
+  }
+}
+
+// @media (max-width: 768px) {
+
+//  }
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 32px;
+  }
+
+  .model {
+    padding-top: 74px;
+    padding-bottom: 92px;
+  }
+
+  .model-title {
+    max-width: 200px;
+  }
+
+  .custom-prev-arrow-icon {
+    width: 25px;
+    height: 25px;
+  }
+
+  .custom-next-arrow {
+    width: 25px;
+    height: 25px;
+  }
+  .slick-track {
+    min-height: 450px;
   }
 }
