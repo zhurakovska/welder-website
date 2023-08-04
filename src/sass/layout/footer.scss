@@ -112,3 +112,29 @@
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    &-wrapper {
+      justify-content: center;
+      align-items: center;
+    }
+    &-wrapper-right {
+      display: none;
+    }
+
+    &-description {
+      position: static;
+      max-width: 260px;
+      text-align: center;
+      line-height: 16px;
+    }
+
+    &-inner {
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
