@@ -89,8 +89,6 @@
   }
 
   .size {
-    // &-subtitle {
-    // }
     &-text-inner {
       width: 214px;
     }
@@ -129,5 +127,94 @@
     font-size: 14px;
     line-height: 18px;
     font-weight: 500;
+  }
+}
+
+@media (max-width: 768px) {
+  .size-wrapper-picture {
+    background-image: url('../images/size-mobile-2-min.jpg');
+  }
+  @media (max-width: 768px) {
+    .size {
+      &-wrapper {
+        flex-direction: column;
+        height: auto;
+      }
+
+      &-wrapper-info {
+        width: 100%;
+        min-width: 0;
+      }
+
+      .size-1 {
+        height: 320px;
+      }
+
+      &-text-inner {
+        max-width: 300px;
+        margin: 0 auto;
+      }
+
+      .size-position {
+        position: static;
+        transform: none;
+        text-align: center;
+      }
+
+      &-subtitle {
+        font-size: 24px;
+      }
+
+      &-text {
+        margin-top: 15px;
+        font-size: 16px;
+      }
+
+      &-wrapper-picture {
+        flex: none;
+        min-height: 382px;
+      }
+    }
+
+    .red-diamond {
+      width: 66px;
+      height: 66px;
+      background-image: $red-color;
+      position: static;
+      transform: none;
+      margin: 0 auto;
+    }
+
+    .top {
+      top: -33px;
+      left: auto;
+      right: auto;
+      transform: none;
+    }
+
+    .bottom {
+      bottom: -33px;
+      left: auto;
+      right: auto;
+      transform: none;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .size-wrapper {
+    flex-direction: column;
+    height: 590px;
+  }
+
+  // .size-wrapper-picture {
+  //   min-height: 324px;
+  // }
+  .size-1 {
+    height: 320px;
+  }
+  .size-wrapper-picture {
+    flex: none;
+    min-height: 382px;
   }
 }

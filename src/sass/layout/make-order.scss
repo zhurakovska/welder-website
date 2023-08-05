@@ -88,6 +88,10 @@
   padding: 20px 25px;
   transition: background-image 6000ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.order-phone-link:hover,
+.order-phone-link:focus {
+  background-image: linear-gradient(180deg, #c41e20 100%, #ea5c68 0%);
+}
 @media (max-width: 1024px) {
   .order > .container {
     padding: 0;
