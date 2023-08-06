@@ -14,7 +14,7 @@
     flex-direction: column;
   }
 
-  .size-1 {
+  &-1 {
     margin-top: auto;
     height: 476px;
     background-image: url('../images/size-1.png');
@@ -26,7 +26,7 @@
     padding: 110px 30px 78px 0;
   }
 
-  .size-position {
+  &-position {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -89,10 +89,29 @@
   }
 
   .size {
+    &-wrapper {
+      height: 490px;
+    }
+    &-wrapper-info {
+      width: 270px;
+      min-width: auto;
+    }
     &-text-inner {
       width: 214px;
+      padding-top: 56px;
     }
-    .size-1 {
+    &-subtitle {
+      font-size: 24px;
+      line-height: 28px;
+    }
+    &-text {
+      margin-top: 20px;
+      font-size: 14px;
+      line-height: 18px;
+      font-weight: 500;
+    }
+
+    &-1 {
       height: 270px;
     }
 
@@ -103,118 +122,59 @@
       background-position: center;
     }
   }
-
-  .size-wrapper {
-    height: 490px;
-  }
-
-  .size-wrapper-info {
-    width: 270px;
-    min-width: auto;
-  }
-
-  .size-text-inner {
-    padding-top: 56px;
-  }
-
-  .size-subtitle {
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  .size-text {
-    margin-top: 20px;
-    font-size: 14px;
-    line-height: 18px;
-    font-weight: 500;
-  }
 }
-
 @media (max-width: 768px) {
-  .size-wrapper-picture {
-    background-image: url('../images/size-mobile-2-min.jpg');
-  }
-  @media (max-width: 768px) {
-    .size {
-      &-wrapper {
-        flex-direction: column;
-        height: auto;
-      }
-
-      &-wrapper-info {
-        width: 100%;
-        min-width: 0;
-      }
-
-      .size-1 {
-        height: 320px;
-      }
-
-      &-text-inner {
-        max-width: 300px;
-        margin: 0 auto;
-      }
-
-      .size-position {
-        position: static;
-        transform: none;
-        text-align: center;
-      }
-
-      &-subtitle {
-        font-size: 24px;
-      }
-
-      &-text {
-        margin-top: 15px;
-        font-size: 16px;
-      }
-
-      &-wrapper-picture {
-        flex: none;
-        min-height: 382px;
-      }
+  .size {
+    &-wrapper {
+      flex-direction: column;
+      height: auto;
     }
 
-    .red-diamond {
-      width: 66px;
-      height: 66px;
-      background-image: $red-color;
+    &-wrapper-info {
+      width: 100%;
+      min-width: 0;
+    }
+
+    &-1 {
+      height: 556px;
+      background-image: url('../images/size-1-mob-min.png');
+    }
+
+    &-text-inner {
+      width: 300px;
+      margin: 0 auto;
+      padding: 58px 0 54px;
+    }
+
+    .size-position {
       position: static;
       transform: none;
-      margin: 0 auto;
+      text-align: center;
     }
 
-    .top {
-      top: -33px;
-      left: auto;
-      right: auto;
-      transform: none;
+    &-subtitle {
+      font-size: 24px;
     }
 
-    .bottom {
-      bottom: -33px;
-      left: auto;
-      right: auto;
-      transform: none;
+    &-text {
+      margin-top: 15px;
+      font-size: 16px;
+      text-align: initialc;
+    }
+
+    &-wrapper-picture {
+      flex: none;
+      min-height: 662px;
+      background-image: url('../images/size-mobile-2-min.jpg');
     }
   }
 }
 
 @media (max-width: 480px) {
-  .size-wrapper {
-    flex-direction: column;
-    height: 590px;
-  }
-
-  // .size-wrapper-picture {
-  //   min-height: 324px;
-  // }
   .size-1 {
     height: 320px;
   }
   .size-wrapper-picture {
-    flex: none;
     min-height: 382px;
   }
 }

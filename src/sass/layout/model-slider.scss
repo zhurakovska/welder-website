@@ -54,7 +54,7 @@
 }
 
 .custom-prev-arrow {
-  left: 10px;
+  left: 0;
   margin-right: 16px;
   display: flex;
   justify-content: start;
@@ -62,7 +62,7 @@
 }
 
 .custom-next-arrow {
-  right: -32px;
+  right: 0;
   margin-left: 16px;
   display: flex;
   justify-content: end;
@@ -84,10 +84,6 @@
     margin-top: 6px;
   }
 }
-
-// @media (max-width: 768px) {
-
-//  }
 
 @media (max-width: 480px) {
   .container {
