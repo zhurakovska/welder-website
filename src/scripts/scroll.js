@@ -1,19 +1,21 @@
-function scrollToSection(elementId) {
-  const element = document.getElementById(elementId);
-  const offsetTop = element.getBoundingClientRect().top;
-  const scrollOptions = {
-    behavior: 'smooth',
-    block: 'start',
-  };
-  window.scrollBy({ top: offsetTop, left: 0, behavior: 'smooth' });
-}
+// Отримайте всі елементи, на які ви хочете застосувати плавний скрол
+const links = document.querySelectorAll('a[href^="#"]');
 
-const anchorLinks = document.querySelectorAll('a[href^="#"]');
-
-anchorLinks.forEach(link => {
-  link.addEventListener('click', event => {
-    event.preventDefault();
-    const target = link.getAttribute('href').slice(1);
-    scrollToSection(target);
-  });
+// Додайте обробник події для кожного посилання
+links.forEach(link => {
+  link.addEventListener('click', smoothScroll);
 });
+
+// Функція, яка здійснює плавний скрол
+function smoothScroll(e) {
+  e.preventDefault();
+
+  // Отримайте цільовий елемент, до якого потрібно прокрутити сторінку
+  const targetId = this.getAttribute('href');
+  const targetElement = document.querySelector(targetId);
+
+  // Використовуйте window.scrollTo або Element.scrollIntoView для прокручування до цільового елемента з анімацією
+  targetElement.scrollIntoView({
+    behavior: 'smooth',
+  });
+}
