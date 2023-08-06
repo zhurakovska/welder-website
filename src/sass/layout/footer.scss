@@ -67,6 +67,12 @@
 
 .menu-link-footer {
   font-size: 15px;
+  transition: color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-link-footer:hover,
+.menu-link-footer:focus {
+  color: $red-secondary-color;
 }
 
 @media (max-width: 1024px) {
