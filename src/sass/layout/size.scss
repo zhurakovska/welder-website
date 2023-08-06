@@ -125,6 +125,7 @@
 }
 @media (max-width: 768px) {
   .size {
+    position: relative;
     &-wrapper {
       flex-direction: column;
       height: auto;
@@ -159,7 +160,7 @@
     &-text {
       margin-top: 15px;
       font-size: 16px;
-      text-align: initialc;
+      text-align: initial;
     }
 
     &-wrapper-picture {
@@ -167,6 +168,19 @@
       min-height: 662px;
       background-image: url('../images/size-mobile-2-min.jpg');
     }
+  }
+  .red-diamond {
+    display: block;
+    width: 36px;
+    height: 36px;
+  }
+
+  .top {
+    top: 15px;
+  }
+
+  .bottom {
+    bottom: 15px;
   }
 }
 
@@ -176,5 +190,18 @@
   }
   .size-wrapper-picture {
     min-height: 382px;
+  }
+  .red-diamond {
+    display: block;
+    width: 26px;
+    height: 26px;
+  }
+
+  .top {
+    top: 20px;
+  }
+
+  .bottom {
+    bottom: 20px;
   }
 }
