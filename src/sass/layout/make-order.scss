@@ -64,6 +64,10 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 38px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &-item-link:hover {
+    color: $red-secondary-color;
   }
 }
 
@@ -78,10 +82,10 @@
 .socials-link {
   fill: $red-secondary-color;
   cursor: pointer;
-  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 0.3snpm start cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover {
-  fill: $black-color;
+  fill: $hot-color;
 }
 
 .order-phone-link {
@@ -94,7 +98,7 @@
   line-height: 33px;
   text-transform: uppercase;
   padding: 20px 25px;
-  transition: background-image 6000ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-image 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-phone-link:hover,
 .order-phone-link:focus {
