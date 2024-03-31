@@ -23,7 +23,7 @@
 
   &-text-inner {
     max-width: 350px;
-    padding: 110px 30px 78px 0;
+    padding: 62px 0 78px 0;
   }
 
   &-position {
@@ -33,8 +33,11 @@
   }
 
   &-subtitle {
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
     font-size: 30px;
-    line-height: 1.26;
   }
 
   &-text {
@@ -98,7 +101,7 @@
     }
     &-text-inner {
       width: 214px;
-      padding-top: 56px;
+      padding: 20px 0;
     }
     &-subtitle {
       font-size: 24px;
@@ -142,8 +145,8 @@
     }
 
     &-text-inner {
-      width: 300px;
-      margin: 0 auto;
+      width: 100%;
+      max-width: 100%;
       padding: 58px 0 54px;
     }
 
@@ -155,6 +158,7 @@
 
     &-subtitle {
       font-size: 24px;
+      text-align: justify;
     }
 
     &-text {

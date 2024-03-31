@@ -60,7 +60,6 @@
   }
 
   &-item-link {
-    text-transform: uppercase;
     font-weight: 500;
     font-size: 18px;
     line-height: 38px;
@@ -73,19 +72,6 @@
 
 .contacts-item + .contacts-item {
   margin-top: 25px;
-}
-
-.socials {
-  display: flex;
-  gap: 12px;
-}
-.socials-link {
-  fill: $red-secondary-color;
-  cursor: pointer;
-  transition: fill 0.3snpm start cubic-bezier(0.4, 0, 0.2, 1);
-}
-.socials-link:hover {
-  fill: $hot-color;
 }
 
 .order-phone-link {
